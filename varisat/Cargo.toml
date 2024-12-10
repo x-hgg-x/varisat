@@ -12,48 +12,47 @@ edition = "2018"
 
 
 [dependencies]
-itoa = "0.4.4"
-log = "0.4.6"
-ordered-float = "2.0.0"
-partial_ref = "0.3.1"
-serde = { version = "1.0.91", features = ["derive"] }
-leb128 = "0.2.4"
-vec_mut_scan = "0.3.0"
-rustc-hash = "1.1.0"
-anyhow = "1.0.32"
-thiserror = "1.0.20"
+itoa = "0.4.8"
+log = "0.4.22"
+ordered-float = "4.5.0"
+partial_ref = "0.3.3"
+serde = { version = "1.0.215", features = ["derive"] }
+leb128 = "0.2.5"
+vec_mut_scan = "0.5.0"
+rustc-hash = "2.1.0"
+anyhow = "1.0.94"
+thiserror = "2.0.6"
 
-    [dependencies.varisat-internal-macros]
-    path = "../varisat-internal-macros"
-    version = "=0.2.2"
+[dependencies.varisat-internal-macros]
+path = "../varisat-internal-macros"
+version = "=0.2.2"
 
-    [dependencies.varisat-formula]
-    path = "../varisat-formula"
-    version = "=0.2.2"
+[dependencies.varisat-formula]
+path = "../varisat-formula"
+version = "=0.2.2"
 
-    [dependencies.varisat-dimacs]
-    path = "../varisat-dimacs"
-    version = "=0.2.2"
+[dependencies.varisat-dimacs]
+path = "../varisat-dimacs"
+version = "=0.2.2"
 
-    [dependencies.varisat-internal-proof]
-    path = "../varisat-internal-proof"
-    version = "=0.2.2"
+[dependencies.varisat-internal-proof]
+path = "../varisat-internal-proof"
+version = "=0.2.2"
 
-    [dependencies.varisat-checker]
-    path = "../varisat-checker"
-    version = "=0.2.2"
+[dependencies.varisat-checker]
+path = "../varisat-checker"
+version = "=0.2.2"
 
 [dev-dependencies]
-proptest = "0.10.1"
-rand = "0.7.3"
-tempfile = "3.0.8"
-env_logger = "0.7.1"
+proptest = "1.5.0"
+rand = "0.8.5"
+tempfile = "3.14.0"
+env_logger = "0.11.5"
 
-    [dev-dependencies.varisat-formula]
-    path = "../varisat-formula"
-    version = "=0.2.2"
-    features = ["proptest-strategies", "internal-testing"]
+[dev-dependencies.varisat-formula]
+path = "../varisat-formula"
+version = "=0.2.2"
+features = ["proptest-strategies", "internal-testing"]
 
 [build-dependencies]
-anyhow = "1.0.32"
-
+anyhow = "1.0.94"

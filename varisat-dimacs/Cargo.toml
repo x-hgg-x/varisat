@@ -10,20 +10,20 @@ license = "MIT/Apache-2.0"
 readme = "README.md"
 
 [dependencies]
-itoa = "0.4.4"
-anyhow = "1.0.32"
-thiserror = "1.0.20"
-    [dependencies.varisat-formula]
-    path = "../varisat-formula"
-    version = "=0.2.2"
+itoa = "0.4.8"
+anyhow = "1.0.94"
+thiserror = "2.0.6"
+[dependencies.varisat-formula]
+path = "../varisat-formula"
+version = "=0.2.2"
 
 [dev-dependencies]
-proptest = "0.10.1"
-rand = "0.7.3"
-tempfile = "3.0.8"
-env_logger = "0.7.1"
+proptest = "1.5.0"
+rand = "0.8.5"
+tempfile = "3.14.0"
+env_logger = "0.11.5"
 
-    [dev-dependencies.varisat-formula]
-    path = "../varisat-formula"
-    version = "=0.2.2"
-    features = ["proptest-strategies", "internal-testing"]
+[dev-dependencies.varisat-formula]
+path = "../varisat-formula"
+version = "=0.2.2"
+features = ["proptest-strategies", "internal-testing"]

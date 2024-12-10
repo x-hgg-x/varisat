@@ -13,8 +13,8 @@ readme = "README.md"
 proc-macro = true
 
 [dependencies]
-synstructure = "0.12.4"
-proc-macro2 = "1.0.20"
-syn = "1.0.40"
-quote = "1.0.7"
-regex = "1.1.6"
+synstructure = "0.12.6"
+proc-macro2 = "1.0.92"
+syn = "1.0.109"
+quote = "1.0.37"
+regex = "1.11.1"
